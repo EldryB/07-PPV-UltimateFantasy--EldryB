@@ -1,6 +1,6 @@
 # Ultimate Fantasy
 
-##Interfaz Gráfica de Usuario (GUI) y Curación
+## Interfaz Gráfica de Usuario (GUI) y Curación
 *   Panel de estado: Se creó la clase PartyMenuState a la cual se accede desde el menú de pausa. Esta dibuja 4 paneles alineados (usando la clase Panel), mostrando de forma limpia el Nivel, HP (con barra de vida), Magia y Experiencia (con barra) de cada héroe.
 *   Visualización de acciones: Al seleccionar a un héroe, se abre OverworldActionState. El código renderiza las habilidades de tipo "enemigo" con set_alpha(100) para hacerlas translúcidas, mientras que las curativas conservan su opacidad normal.
 *   Curación individual: Si se selecciona "Heal", el juego entra en OverworldTargetState, apareciendo un cursor sobre los paneles de la Party para seleccionar al aliado herido.
