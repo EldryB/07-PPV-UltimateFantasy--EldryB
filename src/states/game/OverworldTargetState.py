@@ -87,5 +87,5 @@ class OverworldTargetState(BaseState):
         self.party_menu_state.render(surface)
 
         panel = self.party_menu_state.panels[self.current_selection]
-        #Posicion del cursor
+        # Cursor position
         self.cursor.render(surface, (panel.x - 8, panel.y + 40))

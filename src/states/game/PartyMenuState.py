@@ -17,7 +17,7 @@ class PartyMenuState(BaseState):
         self.play_state = play_state
         self.party = play_state.world.party
 
-        #Los 4 paneles de los personajes
+        # The 4 character panels
         self.panels = []
         self.characters = []
         
@@ -96,7 +96,7 @@ class PartyMenuState(BaseState):
             panel.render(surface)
             char = self.characters[i]
             
-            #informacion del personaje
+            # Character information
             color = settings.COLOR_WHITE if not char.dead else settings.COLOR_GRAY
             name_surf = font.render(char.name, False, color)
             surface.blit(name_surf, (panel.x + 8, panel.y + 8))
@@ -134,7 +134,7 @@ class PartyMenuState(BaseState):
             )
             exp_bar.render(surface)
             
-        #Cursor(manito)
+        # Cursor (hand)
         if self.cursor:
             panel = self.panels[self.current_selection]
             self.cursor.render(surface, (panel.x - 8, panel.y + 8))
